@@ -1,6 +1,7 @@
 import React from "react";
 import "../components/header.css";
 import { Link } from "react-router-dom";
+import SearchBox from "./search-function";
 
 function Header() {
   return (
@@ -9,8 +10,9 @@ function Header() {
         Welcome
       </span>
       <nav className="header__nav">
-        <Link to="/">Home</Link>
+        <Link to="/" className="header-link">Home</Link> 
       </nav>
+      <SearchBox className="search-bar" placeholder="Enter term name here" handleChange={(event)=> this.useState({searchField:event.target.value})}/>
     </header>
   );
 }
