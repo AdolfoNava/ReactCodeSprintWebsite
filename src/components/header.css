@@ -9,3 +9,14 @@
 .header__nav {
   font-size: 1.25rem;
 }
+.header-link {
+  color: white;
+}
+.header-link:focus,
+.header-link:hover {
+  background-color: rgb(193, 196, 61);
+  color: white;
+}
+.search-bar {
+  margin: 2rem 0 2rem 0;
+}
